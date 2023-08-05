@@ -53,3 +53,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+#Ray's staff
+instructions.txt
+output.txt

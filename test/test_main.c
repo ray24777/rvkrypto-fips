@@ -62,7 +62,7 @@ int main ()
 	printf("Printing cipher text:\n");
 	for(int i=0;i<16;i++)
 	{
-		printf("%x ",cipher_text[i]);
+		printf("%x",cipher_text[i]);
 	}
 	printf("\n");
 

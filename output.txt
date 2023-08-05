@@ -1,8 +1,0 @@
-Test made at Sat Aug  5 03:44:09 PM CST 2023 for RV32 arch.
-/home/ray/riscv-crypto/build/riscv64-unknown-elf/bin/riscv64-unknown-elf-gcc  -march=rv32imac -mabi=ilp32 -DRVKINTRIN_ASSEMBLER -Wall -Wextra -O2 -g -I. -Itest -DRVK_ALGTEST_VERBOSE_SIO=1 -o xtest rvk_emu_intrin.o aes/aes_api.o aes/aes_otf_rvk64.o aes/aes_rvk32.o aes/aes_rvk64.o gcm/gcm_api.o gcm/gcm_gfmul_rv32.o gcm/gcm_gfmul_rv64.o present/present.o present/present_rv32.o present/present_rv64.o sha2/sha2_api.o sha2/sha2_cf256_rvk.o sha2/sha2_cf512_rvk32.o sha2/sha2_cf512_rvk64.o sha3/sha3_api.o sha3/sha3_f1600_rvb32.o sha3/sha3_f1600_rvb64.o sm3/sm3_api.o sm3/sm3_cf256_rvk.o sm4/sm4_rvk.o test/aes.o test/test_aes.o test/test_gcm.o test/test_main.o test/test_present.o test/test_rvkat_sio.o test/test_sha2.o test/test_sha3.o test/test_sm3.o test/test_sm4.o test/test_zkr.o  
-/home/ray/riscv-crypto/build/riscv64-unknown-elf/bin/spike --isa=rv32imac_zkn_zks_zkr /home/ray/riscv-crypto/build/riscv64-unknown-elf/riscv32-unknown-elf/bin/pk ./xtest
-bbl loader
-Printing cipher text:
-12 bf 40 1b 8e 8e 56 6c d4 29 ff 7e e 5c 4e 86 
-Printing plain text:
-Hello World!
