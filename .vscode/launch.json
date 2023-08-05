@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Make",
+            "type": "f5anything",
+            "request": "launch",
+            "command": "/home/ray/rvkrypto-fips/cc.sh",
+        },
+    ],
+    "version": "2.0.0"
+}

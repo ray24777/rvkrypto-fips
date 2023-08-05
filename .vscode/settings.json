@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "riscv_crypto.h": "c",
+        "aes_api.h": "c"
+    }
+}

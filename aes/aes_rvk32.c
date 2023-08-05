@@ -12,6 +12,7 @@
 #include "rv_endian.h"
 #include <stddef.h>
 
+#include <stdio.h>
 //	=== ENCRYPTION ===
 
 //	Encrypt rounds. Implements AES-128/192/256 depending on nr = {10,12,14}
@@ -141,6 +142,16 @@ void aes256_enc_ecb_rvk32(uint8_t ct[16], const uint8_t pt[16],
 void aes128_enc_key_rvk32(uint32_t rk[44], const uint8_t key[16])
 {
 	//	AES Round Constants
+
+	/*Test code by ray*/
+	// //print the default value of rk and key
+	// for (uint8_t i = 0; i < 44; i++) {
+	// 	printf("rk[%d]=%x\n",i,rk[i]);
+	// }
+	// for (uint8_t i = 0; i < 16; i++) {
+	// 	printf("key[%d]=%x\n",i,key[i]);
+	// }
+	/*Test code by ray*/
 	const uint8_t aes_rcon[] = {
 		0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1B, 0x36
 	};

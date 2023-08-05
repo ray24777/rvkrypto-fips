@@ -47,6 +47,11 @@ extern void (*aes192_enc_ecb)(uint8_t ct[16], const uint8_t pt[16],
 extern void (*aes256_enc_ecb)(uint8_t ct[16], const uint8_t pt[16],
 							  const uint32_t rk[AES256_RK_WORDS]);
 
+extern void aes_enc(uint8_t pt[16], uint8_t ct[16],
+                      uint8_t key[32],uint32_t rk[AES256_RK_WORDS]);
+
+extern void aes_dec(uint8_t pt[16], uint8_t ct[16],
+					  uint8_t key[32],uint32_t rk[AES256_RK_WORDS]);
 //	Set decryption key
 
 extern void (*aes128_dec_key)(uint32_t rk[AES128_RK_WORDS],
